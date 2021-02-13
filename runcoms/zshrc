@@ -10,6 +10,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# forgit https://github.com/wfxr/forgit
+unalias glo # unaliased bc of zprezto git extension
+[ -f $HOME/dev//dotfiles/forgit/forgit.plugin.zsh ] && source $HOME/dev/dotfiles/forgit/forgit.plugin.zsh >/dev/null
+
 # Customize to your needs...
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
